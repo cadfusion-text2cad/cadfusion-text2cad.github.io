@@ -286,12 +286,34 @@
         </a>
       </div>
       <div class="section-title has-text-centered is-centered">
-        <h2 class="title is-3">Comparison to Prior Works (Quantative)</h2><br>
+        <h2 class="title is-3">Comparison to Prior Works (Quantitative)</h2><br>
       </div>
       <div class="column is-max-desktop is-centered has-text-centered">
         <div class="column has-text-centered">
-            <table border="1">
-                <tr>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    text-align: center;
+                    font-family: Arial, sans-serif;
+                }
+                th, td {
+                    padding: 8px;
+                }
+                th {
+                    font-weight: bold;
+                }
+                .thick-line {
+                    border-top: 3px solid black;
+                    border-bottom: 3px solid black;
+                }
+                .thin-line {
+                    border-bottom: 1px solid black;
+                }
+            </style>
+            
+            <table>
+                <tr class="thick-line">
                     <th rowspan="2">Method</th>
                     <th colspan="2">F1 &uarr;</th>
                     <th rowspan="2">CD &darr;</th>
@@ -302,11 +324,11 @@
                     <th rowspan="2">LVM Score &uarr;</th>
                     <th rowspan="2">Avg. Rank &darr;</th>
                 </tr>
-                <tr>
+                <tr class="thick-line">
                     <th>Sketch</th>
                     <th>Extrusion</th>
                 </tr>
-                <tr>
+                <tr class="thin-line">
                     <td><strong>GPT-4o</strong></td>
                     <td>82.96</td>
                     <td>85.72</td>
@@ -342,7 +364,11 @@
                     <td><strong>8.96</strong></td>
                     <td><strong>1.86</strong></td>
                 </tr>
+                <tr class="thick-line">
+                    <td colspan="10"></td>
+                </tr>
             </table>
+            
             
         </div>
       </div>
