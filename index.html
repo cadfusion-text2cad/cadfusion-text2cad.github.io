@@ -191,7 +191,7 @@
 
   <!--Gallery-->
   <section class="section">
-    <div class="container is-max-desktop" id="gallery">
+    <div class="container is-four-fifths" id="gallery">
       <div class="link-block ">
         <a href="#top" class="nav-link button-55 is-normal">
           <span>Go to Top</span>
@@ -263,13 +263,14 @@
         </a>
       </div>
       <div class="section-title has-text-centered is-centered">
-        <h2 class="title is-3">Comparison to Prior Works</h2><br>
+        <h2 class="title is-3">Comparison to Prior Works (Qualitative)</h2><br>
       </div>
-      <div class="container is-max-desktop is-centered has-text-centered new-gallery">
-        <div class="new-gallery-image">
-          <img src="static/images/comparisons.png" alt="image" />
+      <div class="column is-max-desktop is-centered has-text-centered">
+        <div class="column has-text-centered">
+          <img src="static/images/comparisons.png" />
         </div>
       </div>
+      
 
           </div>
         </div>
@@ -278,6 +279,82 @@
   </section>
 
   <section class="section hero is-light">
+    <div class="container is-widescreen" id="comparisons">
+      <div class="link-block ">
+        <a href="#top" class="nav-link button-55 is-normal">
+          <span>Go to Top</span>
+        </a>
+      </div>
+      <div class="section-title has-text-centered is-centered">
+        <h2 class="title is-3">Comparison to Prior Works (Quantative)</h2><br>
+      </div>
+      <div class="column is-max-desktop is-centered has-text-centered">
+        <div class="column has-text-centered">
+            <table border="1">
+                <tr>
+                    <th rowspan="2">Method</th>
+                    <th colspan="2">F1 &uarr;</th>
+                    <th rowspan="2">CD &darr;</th>
+                    <th rowspan="2">COV &uarr;</th>
+                    <th rowspan="2">MMD &darr;</th>
+                    <th rowspan="2">JSD &darr;</th>
+                    <th rowspan="2">IR &darr;</th>
+                    <th rowspan="2">LVM Score &uarr;</th>
+                    <th rowspan="2">Avg. Rank &darr;</th>
+                </tr>
+                <tr>
+                    <th>Sketch</th>
+                    <th>Extrusion</th>
+                </tr>
+                <tr>
+                    <td><strong>GPT-4o</strong></td>
+                    <td>82.96</td>
+                    <td>85.72</td>
+                    <td>85.04</td>
+                    <td>72.40</td>
+                    <td>6.60</td>
+                    <td>37.93</td>
+                    <td>74.26</td>
+                    <td>5.13</td>
+                    <td>3.22</td>
+                </tr>
+                <tr>
+                    <td><strong>Text2CAD</strong></td>
+                    <td>63.94</td>
+                    <td>92.13</td>
+                    <td><strong>30.23</strong></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><strong>3.37</strong></td>
+                    <td>2.01</td>
+                    <td>2.97</td>
+                </tr>
+                <tr>
+                    <td><strong>\model</strong></td>
+                    <td><strong>85.22</strong></td>
+                    <td><strong>92.79</strong></td>
+                    <td>45.67</td>
+                    <td><strong>90.40</strong></td>
+                    <td><strong>3.49</strong></td>
+                    <td><strong>17.11</strong></td>
+                    <td>6.20</td>
+                    <td><strong>8.96</strong></td>
+                    <td><strong>1.86</strong></td>
+                </tr>
+            </table>
+            
+        </div>
+      </div>
+      
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="container is-widescreen" id="diversity">
       <!-- <div class="section is center has-text-centered ">
         text
@@ -293,9 +370,9 @@
         <div class="section-title has-text-centered is-centered">
             <h2 class="title is-3">Design Variations</h2><br>
           </div>
-          <div class="container is-max-desktop is-centered has-text-centered new-gallery">
-            <div class="new-gallery-image">
-              <img src="static/images/Multi-CAD.png" alt="image" />
+          <div class="column is-max-desktop is-centered has-text-centered">
+            <div class="column has-text-centered">
+              <img src="static/images/Multi-CAD.png" />
             </div>
           </div>
 
