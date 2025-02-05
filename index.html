@@ -303,8 +303,10 @@
                 th {
                     font-weight: bold;
                 }
-                .thick-line {
+                .thick-line-top {
                     border-top: 3px solid black;
+                }
+                .thick-line-bottom {
                     border-bottom: 3px solid black;
                 }
                 .thin-line {
@@ -313,7 +315,7 @@
             </style>
             
             <table>
-                <tr class="thick-line">
+                <tr class="thick-line-top">
                     <th rowspan="2">Method</th>
                     <th colspan="2">F1 &uarr;</th>
                     <th rowspan="2">CD &darr;</th>
@@ -324,11 +326,11 @@
                     <th rowspan="2">LVM Score &uarr;</th>
                     <th rowspan="2">Avg. Rank &darr;</th>
                 </tr>
-                <tr class="thick-line">
+                <tr class="thick-line-top">
                     <th>Sketch</th>
                     <th>Extrusion</th>
                 </tr>
-                <tr>
+                <tr class="thin-line">
                     <td><strong>GPT-4o</strong></td>
                     <td>82.96</td>
                     <td>85.72</td>
@@ -353,7 +355,7 @@
                     <td>2.97</td>
                 </tr>
                 <tr>
-                    <td><strong>\model</strong></td>
+                    <td><strong>CADFusion</strong></td>
                     <td><strong>85.22</strong></td>
                     <td><strong>92.79</strong></td>
                     <td>45.67</td>
@@ -364,10 +366,11 @@
                     <td><strong>8.96</strong></td>
                     <td><strong>1.86</strong></td>
                 </tr>
-                <tr class="thick-line">
+                <tr class="thick-line-bottom">
                     <td colspan="10"></td>
                 </tr>
             </table>
+            
             
             
         </div>
